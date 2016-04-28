@@ -2,8 +2,20 @@
 If you need everyone in your stream to be a moderator, you're in the right place.
 
 ## Setup
-On **Windows**, hit the `Windows` key on your keyboard, then type `cmd` and press `ENTER` to get into the terminal.
+Install dependencies:
 
 ```shell
-npm install tmi.js --save
+npm install
+```
+
+Copy config example and replace with relevant information:
+```shell
+cp config/configExample.js config.js
+```
+
+Replace the contents of `config/config.js` with the correct username and oauth (found at http://twitchapps.com/tmi/)
+
+## To Run
+```shell
+node bot.js
 ```
